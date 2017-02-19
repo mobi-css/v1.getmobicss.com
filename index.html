@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  <link rel="stylesheet" href="/css/mobi.css/mobi.min.css">
+<link rel="stylesheet" href="/css/font-awesome-4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/mobi-theme.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+
+  <title>Mobi.css - v1.1.0</title>
+</head>
+
+  <body>
+    <div class="flex-center">
+      <div class="container">
+        
+  <header class="theme-header">
+    <nav class="flex-left">
+      
+        <div class="theme-nav-item flex-center flex-middle
+  theme-nav-item-current
+">
+  <a class="unit-0 theme-nav-item-link text-center" href="/">
+    
+    
+      <img class="theme-nav-item-img" src="/assets/img/mobi-logo-512.png"/>
+    
+  </a>
+</div>
+
+      
+        <div class="theme-nav-item flex-center flex-middle
+  
+">
+  <a class="unit-0 theme-nav-item-link text-center" href="/docs">
+    
+      <i class="theme-nav-item-icon fa fa-book"></i>
+    
+    
+  </a>
+</div>
+
+      
+        <div class="theme-nav-item flex-center flex-middle
+  
+">
+  <a class="unit-0 theme-nav-item-link text-center" href="/reference">
+    
+      <i class="theme-nav-item-icon fa fa-hashtag"></i>
+    
+    
+  </a>
+</div>
+
+      
+        <div class="theme-nav-item flex-center flex-middle
+  
+">
+  <a class="unit-0 theme-nav-item-link text-center" href="/extensions">
+    
+      <i class="theme-nav-item-icon fa fa-cogs"></i>
+    
+    
+  </a>
+</div>
+
+      
+      <div class="unit"></div>
+      
+        <div class="theme-nav-item flex-center flex-middle
+  
+">
+  <a class="unit-0 theme-nav-item-link text-center" href="https://github.com/xcatliu/mobi.css">
+    
+      <i class="theme-nav-item-icon fa fa-github"></i>
+    
+    
+  </a>
+</div>
+
+      
+    </nav>
+  </header>
+
+
+        <blockquote class="top-gap-big site-top-warning">
+  <p>WARNING: This is an old version of Mobi.css, please checkout <a href="http://getmobicss.com">http://getmobicss.com</a> to get the latest version!</p>
+</blockquote>
+
+        <article>
+          <h1 id="Mobi-css-v1-1-0"><a href="#Mobi-css-v1-1-0" class="headerlink" title="Mobi.css - v1.1.0"></a>Mobi.css - v1.1.0</h1><blockquote>
+<p>A lightweight, flexible css framework that focus on mobile.</p>
+</blockquote>
+<h2 id="Languages"><a href="#Languages" class="headerlink" title="Languages"></a>Languages</h2><p>English | <a href="zh-cn">简体中文</a></p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><ul>
+<li>Only 3.6kb after gzipped, less than Skeleton, Pure.css and Bootstrap v4, etc</li>
+<li>Heavy use of flexbox, super flexible, less than 10 lines of custom style in the official site</li>
+<li>Focus on mobile, show mobile pages in desktop with a sidebar on the left or right</li>
+</ul>
+<h2 id="Getting-started"><a href="#Getting-started" class="headerlink" title="Getting started"></a>Getting started</h2><p>You can download Mobi.css in <a href="https://github.com/xcatliu/mobi.css/releases" target="_blank" rel="external">this page</a>, then use <code>dist/mobi.min.css</code> for the compressed version.</p>
+<p>Or use <a href="https://cdnjs.com/libraries/mobi.css" target="_blank" rel="external">cdnjs</a>:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/mobi.css/1.1.0/mobi.min.css"</span> /&gt;</span></div></pre></td></tr></table></figure>
+<p>Or use npm to install:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">npm install --save mobi.css</div></pre></td></tr></table></figure>
+<p>You can also build Mobi.css to your project if you are using Sass:</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><div class="line">@<span class="keyword">import</span> <span class="string">'mobi.css/src/mobi'</span>;</div></pre></td></tr></table></figure>
+<p>Be sure you have added <code>node_modules</code> to your Sass’s <a href="http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory" target="_blank" rel="external">load_paths</a>.</p>
+<h2 id="Browser-Support"><a href="#Browser-Support" class="headerlink" title="Browser Support"></a>Browser Support</h2><h3 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h3><ul>
+<li>[x] Last 5 iOS versions</li>
+</ul>
+<h3 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h3><ul>
+<li>[x] Last 5 Android versions</li>
+<li>[x] Last 5 ChromeAndroid versions</li>
+<li>[x] Last 5 UCAndroid versions (*)</li>
+<li>[x] Last 5 FirefoxAndroid versions (*)</li>
+<li>[x] Last 5 OperaMobile versions (*)</li>
+<li>[x] Last 5 OperaMini versions (*)</li>
+<li>[x] Last 5 Samsung versions (*)</li>
+</ul>
+<h3 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h3><ul>
+<li>[x] Last 3 Chrome versions</li>
+<li>[x] Last 3 Firefox versions</li>
+<li>[x] Last 3 Safari versions</li>
+<li>[x] Last 3 Edge versions</li>
+<li>[x] Last 5 ExplorerMobile versions (*)</li>
+</ul>
+<h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><ul>
+<li>Use <a href="https://github.com/postcss/autoprefixer" target="_blank" rel="external">Autoprefixer</a> to ensure Mobi.css works on all major mobile devices</li>
+<li>Browsers query comes from <a href="https://github.com/ai/browserslist" target="_blank" rel="external">Browserslist</a></li>
+<li>Browsers marked as (*) were not well tested, but they should work fine</li>
+</ul>
+<h2 id="Who’s-using-Mobi-css"><a href="#Who’s-using-Mobi-css" class="headerlink" title="Who’s using Mobi.css?"></a>Who’s using Mobi.css?</h2><ul>
+<li><a href="https://github.com/xcatliu/hexo-theme-mobi.css" target="_blank" rel="external">Hexo Theme Mobi.css</a> | <a href="http://blog.xcatliu.com/" target="_blank" rel="external">Demo</a></li>
+<li><a href="https://github.com/Alleysakura/hexo-theme-mbxo" target="_blank" rel="external">Hexo Theme mbxo</a> | <a href="https://alleysakura.github.io/hexo-theme-mbxo/" target="_blank" rel="external">Demo</a></li>
+<li><a href="https://solovyov.net/" target="_blank" rel="external">solovyov.net: Alexander Solovyov</a></li>
+<li><a href="https://github.com/hanxi/note-md" target="_blank" rel="external">note-md</a> 一个专注浏览的个人笔记</li>
+</ul>
+<p><a href="https://github.com/xcatliu/mobi.css/issues/72" target="_blank" rel="external">Tell me</a> if you are using Mobi.css!</p>
+<h2 id="Buy-me-a-coffee"><a href="#Buy-me-a-coffee" class="headerlink" title="Buy me a coffee"></a><a href="https://github.com/xcatliu/buy-me-a-coffee" target="_blank" rel="external">Buy me a coffee</a></h2><h2 id="What’s-next"><a href="#What’s-next" class="headerlink" title="What’s next"></a>What’s next</h2><ul>
+<li><a href="docs">Documentations</a>: Design philosophy and tutorial</li>
+<li><a href="reference">Reference</a>: All the Mobi.css styles in one page</li>
+<li><a href="extensions">Extensions</a>: Plugins, themes, etc</li>
+<li><a href="https://github.com/xcatliu/mobi.css" target="_blank" rel="external">GitHub</a>: Open an issue, contributing to Mobi.css</li>
+</ul>
+
+        </article>
+        <hr/>
+        <address>
+          Designed and built with <i class="fa fa-heart" style="color:red;"></i> by <a href="https://github.com/xcatliu/">@xcatliu</a>.
+        </address>
+      </div>
+      <aside class="hide-on-mobile" style="padding:0 28px; width:256px;">
+        <p class="text-center">Scan to view on mobile</p>
+        <p><img alt="qrcode" src="/assets/img/qrcode.png"/></p>
+      </aside>
+    </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45256157-10', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

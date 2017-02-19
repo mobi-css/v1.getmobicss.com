@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  <link rel="stylesheet" href="/css/mobi.css/mobi.min.css">
+<link rel="stylesheet" href="/css/font-awesome-4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/mobi-theme.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+
+  <title>Mobi.css - v1.1.0</title>
+</head>
+
+  <body>
+    <div class="flex-center">
+      <div class="container">
+        
+  <header class="theme-header">
+    <nav class="flex-left">
+      
+        <div class="theme-nav-item flex-center flex-middle
+  
+">
+  <a class="unit-0 theme-nav-item-link text-center" href="/zh-cn/">
+    
+    
+      <img class="theme-nav-item-img" src="/assets/img/mobi-logo-512.png"/>
+    
+  </a>
+</div>
+
+      
+        <div class="theme-nav-item flex-center flex-middle
+  
+">
+  <a class="unit-0 theme-nav-item-link text-center" href="/zh-cn/docs">
+    
+      <i class="theme-nav-item-icon fa fa-book"></i>
+    
+    
+  </a>
+</div>
+
+      
+        <div class="theme-nav-item flex-center flex-middle
+  theme-nav-item-current
+">
+  <a class="unit-0 theme-nav-item-link text-center" href="/zh-cn/reference">
+    
+      <i class="theme-nav-item-icon fa fa-hashtag"></i>
+    
+    
+  </a>
+</div>
+
+      
+        <div class="theme-nav-item flex-center flex-middle
+  
+">
+  <a class="unit-0 theme-nav-item-link text-center" href="/zh-cn/extensions">
+    
+      <i class="theme-nav-item-icon fa fa-cogs"></i>
+    
+    
+  </a>
+</div>
+
+      
+      <div class="unit"></div>
+      
+        <div class="theme-nav-item flex-center flex-middle
+  
+">
+  <a class="unit-0 theme-nav-item-link text-center" href="https://github.com/xcatliu/mobi.css">
+    
+      <i class="theme-nav-item-icon fa fa-github"></i>
+    
+    
+  </a>
+</div>
+
+      
+    </nav>
+  </header>
+
+
+        <blockquote class="top-gap-big site-top-warning">
+  <p>注意：这是一个旧版本的 Mobi.css，请访问 <a href="http://getmobicss.com">http://getmobicss.com</a> 获取最新的版本！</p>
+</blockquote>
+
+        <article>
+          <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>类：</p>
+<ul>
+<li><a href="#布局"><code>.container</code></a></li>
+<li><a href="#top-gap"><code>.top-gap</code></a>, <a href="#top-gap"><code>.top-gap-big</code></a>, <a href="#top-gap"><code>.top-gap-0</code></a></li>
+<li><a href="#Flexbox"><code>.flex-left</code></a>, <a href="#Flexbox"><code>.flex-center</code></a>, <a href="#Flexbox"><code>.flex-right</code></a>, <a href="#Flexbox"><code>.flex-top</code></a>, <a href="#Flexbox"><code>.flex-middle</code></a>, <a href="#Flexbox"><code>.flex-bottom</code></a></li>
+<li><a href="#flex-vertical"><code>.flex-vertical</code></a></li>
+<li><a href="#单元"><code>.unit</code></a>, <a href="#单元"><code>.unit-1-2</code></a>, <a href="#单元"><code>.unit-1-3</code></a>, <a href="#单元"><code>.unit-1-4</code></a>, <a href="#单元"><code>.unit-2-3</code></a>, <a href="#单元"><code>.unit-3-4</code></a>, <a href="#单元"><code>.unit-0</code></a></li>
+<li><a href="#units-gap"><code>.units-gap</code></a></li>
+<li><a href="#scroll-view"><code>.scroll-view</code></a></li>
+<li><a href="#hide-on-mobile"><code>.hide-on-mobile</code></a>, <a href="#hide-on-mobile"><code>show-on-mobile</code></a></li>
+<li><a href="#内联文本语义"><code>.text-left</code></a>, <a href="#内联文本语义"><code>.text-center</code></a>, <a href="#内联文本语义"><code>text-right</code></a></li>
+<li><a href="#表格内容"><code>.table</code></a></li>
+<li><a href="#表单"><code>.form</code></a></li>
+</ul>
+<p>元素：</p>
+<ul>
+<li><a href="#内容分区">内容分区</a></li>
+<li><a href="#文本内容">文本内容</a></li>
+<li><a href="#内联文本语义">内联文本语义</a></li>
+<li><a href="#多媒体">多媒体</a></li>
+<li><a href="#表格内容">表格内容</a></li>
+<li><a href="#表单">表单</a></li>
+</ul>
+<h2 id="内容分区"><a href="#内容分区" class="headerlink" title="内容分区"></a>内容分区</h2><h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p>使用 <code>.container</code> 创建一个包含所有内容的容器。</p>
+<p><img src="/assets/img/layout.jpg" alt="layout"></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-center"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Mobi.css<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><img src="/assets/img/layout-with-side.jpg" alt="layout-with-side"></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-center"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Mobi.css<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">aside</span> <span class="attr">class</span>=<span class="string">"hide-on-mobile"</span> <span class="attr">style</span>=<span class="string">"padding:0 28px;"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>扫描可在手机中查看<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"path/to/qrcode.png"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">aside</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>使用 <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code> 和 <code>&lt;section&gt;</code> 布局：</p>
+
+<div class="flex-center top-gap site-box">
+  <div class="unit-1-2 flex-vertical" style="height:300px;">
+    <header class="site-box">&lt;header&gt;</header>
+    <nav class="site-box">&lt;nav&gt;</nav>
+    <section class="site-box">&lt;section&gt;</section>
+    <article class="unit site-box">&lt;article&gt;</article>
+    <footer class="site-box">&lt;footer&gt;</footer>
+  </div>
+  <aside class="site-box">&lt;aside&gt;</aside>
+</div>
+
+<p><a id="top-gap"></a></p>
+<p>使用 <code>.top-gap</code>, <code>.top-gap-big</code> 和 <code>.top-gap-0</code> 覆盖 <code>margin-top</code>：</p>
+
+<div class="top-gap site-box">div.top-gap</div>
+<p class="top-gap-0 site-box">p.top-gap-0</p>
+<section class="top-gap-big site-box">section.top-gap-big</section>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"top-gap site-box"</span>&gt;</span>div.top-gap<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"top-gap-0 site-box"</span>&gt;</span>p.top-gap-0<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">section</span> <span class="attr">class</span>=<span class="string">"top-gap-big site-box"</span>&gt;</span>section.top-gap-big<span class="tag">&lt;/<span class="name">section</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><a id="scroll-view"></a></p>
+<p>使用 <code>.scroll-view</code> 让块级元素可滑动：</p>
+
+<div class="top-gap scroll-view" style="max-height:400px;">
+  <h2>琵琶行</h2>
+  <address>作者：白居易</address>
+  <p>
+    浔阳江头夜送客，枫叶荻花秋瑟瑟。<br>
+    主人下马客在船，举酒欲饮无管弦。<br>
+    醉不成欢惨将别，别时茫茫江浸月。<br>
+    忽闻水上琵琶声，主人忘归客不发。<br>
+    寻声暗问弹者谁？琵琶声停欲语迟。<br>
+    移船相近邀相见，添酒回灯重开宴。<br>
+    千呼万唤始出来，犹抱琵琶半遮面。<br>
+    转轴拨弦三两声，未成曲调先有情。<br>
+    弦弦掩抑声声思，似诉平生不得志。<br>
+    低眉信手续续弹，说尽心中无限事。<br>
+    轻拢慢捻抹复挑，初为霓裳后六幺。<br>
+    大弦嘈嘈如急雨，小弦切切如私语。<br>
+    嘈嘈切切错杂弹，大珠小珠落玉盘。<br>
+    间关莺语花底滑，幽咽泉流冰下难。<br>
+    冰泉冷涩弦凝绝，凝绝不通声暂歇。<br>
+    别有幽愁暗恨生，此时无声胜有声。<br>
+    银瓶乍破水浆迸，铁骑突出刀枪鸣。<br>
+    曲终收拨当心画，四弦一声如裂帛。<br>
+    东船西舫悄无言，唯见江心秋月白。<br>
+    沉吟放拨插弦中，整顿衣裳起敛容。<br>
+    自言本是京城女，家在虾蟆陵下住。<br>
+    十三学得琵琶成，名属教坊第一部。<br>
+    曲罢曾教善才服，妆成每被秋娘妒。<br>
+    五陵年少争缠头，一曲红绡不知数。<br>
+    钿头银篦击节碎，血色罗裙翻酒污。<br>
+    今年欢笑复明年，秋月春风等闲度。<br>
+    弟走从军阿姨死，暮去朝来颜色故。<br>
+    门前冷落鞍马稀，老大嫁作商人妇。<br>
+    商人重利轻别离，前月浮梁买茶去。<br>
+    去来江口守空船，绕船月明江水寒。<br>
+    夜深忽梦少年事，梦啼妆泪红阑干。<br>
+    我闻琵琶已叹息，又闻此语重唧唧。<br>
+    同是天涯沦落人，相逢何必曾相识！<br>
+    我从去年辞帝京，谪居卧病浔阳城。<br>
+    浔阳地僻无音乐，终岁不闻丝竹声。<br>
+    住近湓江地低湿，黄芦苦竹绕宅生。<br>
+    其间旦暮闻何物？杜鹃啼血猿哀鸣。<br>
+    春江花朝秋月夜，往往取酒还独倾。<br>
+    岂无山歌与村笛？呕哑嘲哳难为听。<br>
+    今夜闻君琵琶语，如听仙乐耳暂明。<br>
+    莫辞更坐弹一曲，为君翻作琵琶行。<br>
+    感我此言良久立，却坐促弦弦转急。<br>
+    凄凄不似向前声，满座重闻皆掩泣。<br>
+    座中泣下谁最多？江州司马青衫湿。
+  </p>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"top-gap scroll-view"</span> <span class="attr">style</span>=<span class="string">"max-height:400px;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">h2</span>&gt;</span>琵琶行<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">address</span>&gt;</span>作者：白居易<span class="tag">&lt;/<span class="name">address</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line">    浔阳江头夜送客，枫叶荻花秋瑟瑟。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    主人下马客在船，举酒欲饮无管弦。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    醉不成欢惨将别，别时茫茫江浸月。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    忽闻水上琵琶声，主人忘归客不发。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    寻声暗问弹者谁？琵琶声停欲语迟。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    移船相近邀相见，添酒回灯重开宴。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    千呼万唤始出来，犹抱琵琶半遮面。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    转轴拨弦三两声，未成曲调先有情。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    弦弦掩抑声声思，似诉平生不得志。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    低眉信手续续弹，说尽心中无限事。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    轻拢慢捻抹复挑，初为霓裳后六幺。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    大弦嘈嘈如急雨，小弦切切如私语。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    嘈嘈切切错杂弹，大珠小珠落玉盘。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    间关莺语花底滑，幽咽泉流冰下难。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    冰泉冷涩弦凝绝，凝绝不通声暂歇。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    别有幽愁暗恨生，此时无声胜有声。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    银瓶乍破水浆迸，铁骑突出刀枪鸣。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    曲终收拨当心画，四弦一声如裂帛。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    东船西舫悄无言，唯见江心秋月白。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    沉吟放拨插弦中，整顿衣裳起敛容。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    自言本是京城女，家在虾蟆陵下住。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    十三学得琵琶成，名属教坊第一部。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    曲罢曾教善才服，妆成每被秋娘妒。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    五陵年少争缠头，一曲红绡不知数。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    钿头银篦击节碎，血色罗裙翻酒污。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    今年欢笑复明年，秋月春风等闲度。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    弟走从军阿姨死，暮去朝来颜色故。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    门前冷落鞍马稀，老大嫁作商人妇。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    商人重利轻别离，前月浮梁买茶去。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    去来江口守空船，绕船月明江水寒。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    夜深忽梦少年事，梦啼妆泪红阑干。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    我闻琵琶已叹息，又闻此语重唧唧。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    同是天涯沦落人，相逢何必曾相识！<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    我从去年辞帝京，谪居卧病浔阳城。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    浔阳地僻无音乐，终岁不闻丝竹声。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    住近湓江地低湿，黄芦苦竹绕宅生。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    其间旦暮闻何物？杜鹃啼血猿哀鸣。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    春江花朝秋月夜，往往取酒还独倾。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    岂无山歌与村笛？呕哑嘲哳难为听。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    今夜闻君琵琶语，如听仙乐耳暂明。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    莫辞更坐弹一曲，为君翻作琵琶行。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    感我此言良久立，却坐促弦弦转急。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    凄凄不似向前声，满座重闻皆掩泣。<span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    座中泣下谁最多？江州司马青衫湿。</div><div class="line">  <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<div class="top-gap scroll-view">
+  <div style="width:1024px;">
+    <i class="fa fa-adjust" style="font-size:6rem;"></i>
+    <i class="fa fa-anchor" style="font-size:6rem;"></i>
+    <i class="fa fa-archive" style="font-size:6rem;"></i>
+    <i class="fa fa-area-chart" style="font-size:6rem;"></i>
+    <i class="fa fa-arrows" style="font-size:6rem;"></i>
+    <i class="fa fa-asterisk" style="font-size:6rem;"></i>
+    <i class="fa fa-at" style="font-size:6rem;"></i>
+    <i class="fa fa-automobile" style="font-size:6rem;"></i>
+    <i class="fa fa-ban" style="font-size:6rem;"></i>
+    <i class="fa fa-bank" style="font-size:6rem;"></i>
+    <i class="fa fa-bar-chart" style="font-size:6rem;"></i>
+    <i class="fa fa-battery-0" style="font-size:6rem;"></i>
+    <i class="fa fa-beer" style="font-size:6rem;"></i>
+    <i class="fa fa-bell" style="font-size:6rem;"></i>
+    <i class="fa fa-bicycle" style="font-size:6rem;"></i>
+  </div>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"top-gap scroll-view"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width:1024px;"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-adjust"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-anchor"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-archive"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-area-chart"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-arrows"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-asterisk"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-at"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-automobile"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-ban"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-bank"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-bar-chart"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-battery-0"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-beer"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-bell"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-bicycle"</span> <span class="attr">style</span>=<span class="string">"font-size:6rem;"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><a id="hide-on-mobile"></a></p>
+<p>使用 <code>hide-on-mobile</code> 或 <code>show-on-mobile</code> 让元素在手机中隐藏或显示：</p>
+
+<p class="hide-on-mobile">这部分会在手机上隐藏。</p>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"hide-on-mobile"</span>&gt;</span>这部分会在手机上隐藏。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<p class="show-on-mobile">这部分只会在手机上显示。</p>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"show-on-mobile"</span>&gt;</span>这部分只会在手机上显示。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="单元"><a href="#单元" class="headerlink" title="单元"></a>单元</h3><p>使用 <code>unit</code>, <code>unit-1-2</code>, <code>unit-1-3</code>, <code>unit-1-4</code>, <code>unit-2-3</code>, <code>unit-3-4</code> 和 <code>unit-0</code> 实现网格系统：</p>
+
+<div class="flex-left top-gap">
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+</div>
+<div class="flex-left">
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+</div>
+<div class="flex-left">
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+</div>
+<div class="flex-left">
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+</div>
+<div class="flex-left top-gap">
+  <div class="unit-1-2 site-box">.unit-1-2</div>
+  <div class="unit-1-2 site-box">.unit-1-2</div>
+</div>
+<div class="flex-left">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+  <div class="unit-2-3 site-box">.unit-2-3</div>
+</div>
+<div class="flex-left">
+  <div class="unit-1-4 site-box">.unit-1-4</div>
+  <div class="unit-3-4 site-box">.unit-3-4</div>
+</div>
+<div class="flex-left">
+  <div class="unit-1-2 site-box">.unit-1-2</div>
+  <div class="unit-1-4 site-box">.unit-1-4</div>
+</div>
+<div class="flex-left top-gap">
+  <div class="unit-0 site-box">.unit-0</div>
+  <div class="unit site-box">.unit</div>
+</div>
+<div class="flex-left">
+  <div class="unit site-box">.unit</div>
+  <div class="unit-0 site-box">.unit-0</div>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left top-gap"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left top-gap"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-2 site-box"</span>&gt;</span>.unit-1-2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-2 site-box"</span>&gt;</span>.unit-1-2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-2-3 site-box"</span>&gt;</span>.unit-2-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-4 site-box"</span>&gt;</span>.unit-1-4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-3-4 site-box"</span>&gt;</span>.unit-3-4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-2 site-box"</span>&gt;</span>.unit-1-2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-4 site-box"</span>&gt;</span>.unit-1-4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left top-gap"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-0 site-box"</span>&gt;</span>.unit-0<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-0 site-box"</span>&gt;</span>.unit-0<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><a id="units-gap"></a></p>
+<p>使用 <code>units-gap</code> 在 <code>unit</code> 之间添加空隙：</p>
+
+<div class="flex-left units-gap top-gap">
+  <div class="unit-0 site-box">.unit-0</div>
+  <div class="unit site-box">.unit</div>
+</div>
+<div class="flex-left units-gap">
+  <div class="unit site-box">.unit</div>
+  <div class="unit-0 site-box">.unit-0</div>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left units-gap top-gap"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-0 site-box"</span>&gt;</span>.unit-0<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left units-gap"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-0 site-box"</span>&gt;</span>.unit-0<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>如果父元素中没有 <code>units-gap</code> 类，则无论子元素使不使用 <code>unit-0</code> 表现都将一致：</p>
+
+<div class="flex-left top-gap">
+  <div class="unit-0 site-box">.unit-0</div>
+  <div class="unit site-box">.unit</div>
+</div>
+<div class="flex-left">
+  <div class="unit site-box">.unit</div>
+  <div class="unit-0 site-box">.unit-0</div>
+</div>
+<div class="flex-left top-gap">
+  <div class="site-box">empty div</div>
+  <div class="unit site-box">.unit</div>
+</div>
+<div class="flex-left">
+  <div class="unit site-box">.unit</div>
+  <div class="site-box">empty div</div>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left top-gap"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-0 site-box"</span>&gt;</span>.unit-0<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-0 site-box"</span>&gt;</span>.unit-0<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left top-gap"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"site-box"</span>&gt;</span>empty div<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"site-box"</span>&gt;</span>empty div<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="Flexbox"><a href="#Flexbox" class="headerlink" title="Flexbox"></a>Flexbox</h3><p>使用 <code>flex-left</code>, <code>flex-center</code>, <code>flex-right</code>, <code>flex-top</code>, <code>flex-middle</code> 和 <code>flex-bottom</code> 对齐块级元素：</p>
+
+<div class="flex-left site-box top-gap" style="height:60px;">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+</div>
+<div class="flex-center site-box" style="height:60px;">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+</div>
+<div class="flex-right site-box" style="height:60px;">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+</div>
+<div class="flex-top site-box" style="height:60px;">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+</div>
+<div class="flex-middle site-box" style="height:60px;">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+</div>
+<div class="flex-bottom site-box" style="height:60px;">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+</div>
+<div class="flex-center flex-middle site-box" style="height:60px;">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left site-box top-gap"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-center site-box"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-right site-box"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-top site-box"</span> <span class="attr">style</span>=<span class="string">"height:60px;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-middle site-box"</span> <span class="attr">style</span>=<span class="string">"height:60px;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-bottom site-box"</span> <span class="attr">style</span>=<span class="string">"height:60px;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-center flex-middle site-box"</span> <span class="attr">style</span>=<span class="string">"height:60px;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><a if="flex-vertical"></a></p>
+<p>使用 <code>flex-vertical</code> 实现垂直布局：</p>
+
+<div class="flex-vertical site-box top-gap" style="height:300px;">
+  <div class="unit-0 site-box">.unit-0</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit-1-4 site-box">.unit-1-4</div>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-vertical site-box top-gap"</span> <span class="attr">style</span>=<span class="string">"height:300px;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-0 site-box"</span>&gt;</span>.unit-0<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit site-box"</span>&gt;</span>.unit<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-4 site-box"</span>&gt;</span>.unit-1-4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>对齐的功能也适用于垂直布局：</p>
+
+<div class="flex-vertical flex-left site-box top-gap" style="height:200px;">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+</div>
+<div class="flex-vertical flex-center site-box" style="height:200px;">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+</div>
+<div class="flex-vertical flex-right site-box" style="height:200px;">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+</div>
+<div class="flex-vertical flex-top site-box" style="height:200px;">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+</div>
+<div class="flex-vertical flex-middle site-box" style="height:200px;">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+</div>
+<div class="flex-vertical flex-bottom site-box" style="height:200px;">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-vertical flex-left site-box top-gap"</span> <span class="attr">style</span>=<span class="string">"height:200px;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-vertical flex-center site-box"</span> <span class="attr">style</span>=<span class="string">"height:200px;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-vertical flex-right site-box"</span> <span class="attr">style</span>=<span class="string">"height:200px;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-vertical flex-top site-box"</span> <span class="attr">style</span>=<span class="string">"height:200px;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-vertical flex-middle site-box"</span> <span class="attr">style</span>=<span class="string">"height:200px;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-vertical flex-bottom site-box"</span> <span class="attr">style</span>=<span class="string">"height:200px;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit-1-3 site-box"</span>&gt;</span>.unit-1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><h1 id="h1-Mobi-css"><a href="#h1-Mobi-css" class="headerlink" title="h1. Mobi.css"></a>h1. Mobi.css</h1><h2 id="h2-Mobi-css"><a href="#h2-Mobi-css" class="headerlink" title="h2. Mobi.css"></a>h2. Mobi.css</h2><h3 id="h3-Mobi-css"><a href="#h3-Mobi-css" class="headerlink" title="h3. Mobi.css"></a>h3. Mobi.css</h3><h4 id="h4-Mobi-css"><a href="#h4-Mobi-css" class="headerlink" title="h4. Mobi.css"></a>h4. Mobi.css</h4><h5 id="h5-Mobi-css"><a href="#h5-Mobi-css" class="headerlink" title="h5. Mobi.css"></a>h5. Mobi.css</h5><h6 id="h6-Mobi-css"><a href="#h6-Mobi-css" class="headerlink" title="h6. Mobi.css"></a>h6. Mobi.css</h6><h2 id="文本内容"><a href="#文本内容" class="headerlink" title="文本内容"></a>文本内容</h2><ul>
+<li>无序列表</li>
+<li>无序列表</li>
+<li>嵌套<ul>
+<li>子无序列表</li>
+<li>子无序列表</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>嵌套<ol>
+<li>子有序列表</li>
+<li>子有序列表</li>
+</ol>
+</li>
+</ol>
+
+<dl>
+  <dt>Mobi.css</dt>
+  <dd>轻量灵活的移动端 CSS 框架。</dd>
+  <dt>Bootstrap</dt>
+  <dd>全世界最流行的移动端优先的响应式布局的前端框架。</dd>
+</dl>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Mobi.css<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>轻量灵活的移动端 CSS 框架。<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Bootstrap<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>全世界最流行的移动端优先的响应式布局的前端框架。<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<pre><code>// 使用 &lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt; 创建块级代码片段。
+document.write('你好，世界');</code></pre>
+
+
+<blockquote>
+  <p>使用 &lt;blockquote&gt; 创建块级引用。</p>
+</blockquote>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">blockquote</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>使用 &amp;lt;blockquote&amp;gt; 创建块级引用。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>使用 <code>&lt;hr&gt;</code> 创建水平线分隔：</p>
+
+<hr>
+
+<p>使用 <code>&lt;figure&gt;</code> 和 <code>&lt;figcaption&gt;</code> 创建相关联的图片和说明：</p>
+
+<figure>
+  <img src="/assets/img/mobi-logo-512.png" alt="Mobi.css Logo">
+  <figcaption>图片说明：Mobi.css 的标志</figcaption>
+</figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">figure</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"/assets/img/mobi-logo-512.png"</span> <span class="attr">alt</span>=<span class="string">"Mobi.css Logo"</span>/&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">figcaption</span>&gt;</span>图片说明：Mobi.css 的标志<span class="tag">&lt;/<span class="name">figcaption</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">figure</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="内联文本语义"><a href="#内联文本语义" class="headerlink" title="内联文本语义"></a>内联文本语义</h2><p>使用 <code>class=&quot;text-left&quot;</code>, <code>class=&quot;text-center&quot;</code> 或 <code>class=&quot;text-right&quot;</code> 对齐文本：</p>
+
+<div class="text-left top-gap">我是小雨</div>
+<div class="text-center">我愛你</div>
+<div class="text-right">你愛我嗎？</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text-left top-gap"</span>&gt;</span>我是小雨<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text-center"</span>&gt;</span>我愛你<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text-right"</span>&gt;</span>你愛我嗎？<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>使用 <code>&lt;a&gt;</code> 创建<a href="#Inline-text-elements">超链接</a>。</p>
+<p>使用 <code>&lt;strong&gt;</code> 创建<strong>重要的文本</strong>。<br>使用 <code>&lt;b&gt;</code> 创建<b>粗体文本</b>。</p>
+<p>使用 <code>&lt;em&gt;</code> 创建<em>强调的文本</em>。<br>使用 <code>&lt;i&gt;</code> 创建<i>斜体文本</i>。</p>
+<p>使用 <code>&lt;del&gt;</code> 创建<del>从文档中被删除的文本</del>。<br>使用 <code>&lt;s&gt;</code> 创建<s>带中划线的文本</s>。</p>
+<p>使用 <code>&lt;ins&gt;</code> 创建<ins>从文档中被添加的文本</ins>。<br>使用 <code>&lt;u&gt;</code> 创建<u>带下划线的文本</u>。</p>
+<p>使用 <code>&lt;small&gt;</code> 创建<small>缩小的文本</small>。<br>使用 <code>&lt;sub&gt;</code> 创建<sub>下标</sub>。<br>使用 <code>&lt;sup&gt;</code> 创建<sup>上标</sup>。</p>
+<p>使用 <code>&lt;code&gt;</code> 创建行内代码片段：<code>alert(‘你好，世界’);</code>。<br>使用 <code>&lt;kbd&gt;</code> 创建键盘输入：<kbd>Ctrl</kbd> + <kbd>D</kbd>。<br>使用 <code>&lt;samp&gt;</code> 创建计算机输出的内容：<samp>Build passed!</samp>。</p>
+<p>使用 <code>&lt;br/&gt;</code> 创建换<br>行。</p>
+<p>使用 <code>&lt;span&gt;</code> 创建行内容器：我<span style="color:red;">爱</span> Mobi.css。</p>
+<p>使用 <code>&lt;abbr&gt;</code> 创建<abbr title="abbr 元素表示缩写，可以包含一段对齐的描述">缩写</abbr>。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line">使用 `<span class="tag">&lt;<span class="name">abbr</span>&gt;</span>` 创建<span class="tag">&lt;<span class="name">abbr</span> <span class="attr">title</span>=<span class="string">"abbr 元素表示缩写，可以包含一段对齐的描述"</span>&gt;</span>缩写<span class="tag">&lt;/<span class="name">abbr</span>&gt;</span>。</div></pre></td></tr></table></figure>
+<p>使用 <code>&lt;cite&gt;</code> 创建引用的元素：<cite><a href="http://getmobicss.com" target="_blank" rel="external">Mobi.css</a></cite>。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">cite</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://getmobicss.com"</span>&gt;</span>Mobi.css<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">cite</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>使用 <code>&lt;data&gt;</code> 关联一段文本和一个计算机能识别的值：<data value="100000">Beijing</data>。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">data</span> <span class="attr">value</span>=<span class="string">"100000"</span>&gt;</span>Beijing<span class="tag">&lt;/<span class="name">data</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>使用 <code>&lt;time&gt;</code> 创建时间：<time datetime="2016-09-30T00:00">九月三十日</time>。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">time</span> <span class="attr">datetime</span>=<span class="string">"2016-09-30T00:00"</span>&gt;</span>九月三十日<span class="tag">&lt;/<span class="name">time</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>使用 <code>&lt;q&gt;</code> 行内引用：<q>我爱 Mobi.css</q>，xcatliu 说到。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">q</span>&gt;</span>我爱 Mobi.css<span class="tag">&lt;/<span class="name">q</span>&gt;</span>，xcatliu 说到。</div></pre></td></tr></table></figure>
+<p>使用 <code>&lt;ruby&gt;</code>, <code>&lt;rp&gt;</code>, <code>&lt;rt&gt;</code> 创建带音标的文本：</p>
+
+<ruby>
+  我 <rp>(</rp><rt>lǎn</rt><rp>)</rp>
+  去 <rp>(</rp><rt>de</rt><rp>)</rp>
+  洗 <rp>(</rp><rt>lǐ</rt><rp>)</rp>
+  澡 <rp>(</rp><rt>nǐ</rt><rp>)</rp>
+  了 <rp>(</rp><rt>le</rt><rp>)</rp>
+</ruby>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span></div><div class="line">  我 <span class="tag">&lt;<span class="name">rp</span>&gt;</span>(<span class="tag">&lt;/<span class="name">rp</span>&gt;</span><span class="tag">&lt;<span class="name">rt</span>&gt;</span>lǎn<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;<span class="name">rp</span>&gt;</span>)<span class="tag">&lt;/<span class="name">rp</span>&gt;</span></div><div class="line">  去 <span class="tag">&lt;<span class="name">rp</span>&gt;</span>(<span class="tag">&lt;/<span class="name">rp</span>&gt;</span><span class="tag">&lt;<span class="name">rt</span>&gt;</span>de<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;<span class="name">rp</span>&gt;</span>)<span class="tag">&lt;/<span class="name">rp</span>&gt;</span></div><div class="line">  洗 <span class="tag">&lt;<span class="name">rp</span>&gt;</span>(<span class="tag">&lt;/<span class="name">rp</span>&gt;</span><span class="tag">&lt;<span class="name">rt</span>&gt;</span>lǐ<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;<span class="name">rp</span>&gt;</span>)<span class="tag">&lt;/<span class="name">rp</span>&gt;</span></div><div class="line">  澡 <span class="tag">&lt;<span class="name">rp</span>&gt;</span>(<span class="tag">&lt;/<span class="name">rp</span>&gt;</span><span class="tag">&lt;<span class="name">rt</span>&gt;</span>nǐ<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;<span class="name">rp</span>&gt;</span>)<span class="tag">&lt;/<span class="name">rp</span>&gt;</span></div><div class="line">  了 <span class="tag">&lt;<span class="name">rp</span>&gt;</span>(<span class="tag">&lt;/<span class="name">rp</span>&gt;</span><span class="tag">&lt;<span class="name">rt</span>&gt;</span>le<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;<span class="name">rp</span>&gt;</span>)<span class="tag">&lt;/<span class="name">rp</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>使用 <code>&lt;bdi&gt;</code> 创建与外界<bdi>不同方向</bdi>的文本。<br>使用 <code>&lt;bdo&gt;</code> <bdo dir="rtl">覆盖</bdo>当前文本方向。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line">与外界<span class="tag">&lt;<span class="name">bdi</span>&gt;</span>不同方向<span class="tag">&lt;/<span class="name">bdi</span>&gt;</span>的文本。  </div><div class="line"><span class="tag">&lt;<span class="name">bdo</span> <span class="attr">dir</span>=<span class="string">"rtl"</span>&gt;</span>覆盖<span class="tag">&lt;/<span class="name">bdo</span>&gt;</span>当前文本方向。</div></pre></td></tr></table></figure>
+<p><code>&lt;bdi&gt;</code> 在 iOS 和 Chrome 中都不可用。请不要在你的项目中使用它。可以使用 <code>&lt;bdo&gt;</code>。</p>
+<p>使用 <code>&lt;dfn&gt;</code> 创建对一个概念的定义：<br><dfn id="dfn-mobicss">Mobi.css</dfn> 是一个轻量灵活的移动端 CSS 框架。<br>什么是 Mobi.css？你可以在<a href="#dfn-mobicss">这里</a>找到定义。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">dfn</span> <span class="attr">id</span>=<span class="string">"dfn-mobicss"</span>&gt;</span>Mobi.css<span class="tag">&lt;/<span class="name">dfn</span>&gt;</span> 是一个轻量灵活的移动端 CSS 框架。  </div><div class="line">什么是 Mobi.css？你可以在<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#dfn-mobicss"</span>&gt;</span>这里<span class="tag">&lt;/<span class="name">a</span>&gt;</span>找到定义。</div></pre></td></tr></table></figure>
+<p>使用 <code>&lt;var&gt;</code> 创建数学表达式或者程序中的变量：</p>
+<p>一个简单的等式：<var>x</var> = <var>y</var> + 2</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line">一个简单的等式：<span class="tag">&lt;<span class="name">var</span>&gt;</span>x<span class="tag">&lt;/<span class="name">var</span>&gt;</span> = <span class="tag">&lt;<span class="name">var</span>&gt;</span>y<span class="tag">&lt;/<span class="name">var</span>&gt;</span> + 2</div></pre></td></tr></table></figure>
+<p>使用 <code>&lt;wbr/&gt;</code> 创建允许浏览器断行的占位符：</p>
+
+这是一段很长<wbr>很长<wbr>很长<wbr>很长<wbr>很长<wbr>非常长<wbr>非常长<wbr>非常长<wbr>非常长<wbr>非常长<wbr>长的无可救药<wbr>长的无可救药<wbr>长的无可救药<wbr>长的无可救药<wbr>长的无可救药的话。
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line">这是一段很长<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>很长<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>很长<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>很长<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>很长<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>非常长<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>非常长<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>非常长<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>非常长<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>非常长<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>长的无可救药<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>长的无可救药<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>长的无可救药<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>长的无可救药<span class="tag">&lt;<span class="name">wbr</span>/&gt;</span>长的无可救药的话。</div></pre></td></tr></table></figure>
+<h2 id="多媒体"><a href="#多媒体" class="headerlink" title="多媒体"></a>多媒体</h2><p><img src="/assets/img/mobi-logo-512.png" alt="Mobi.css Logo"></p>
+
+<p>
+  <audio controls>
+    <source src="/assets/croatian-rhapsody.mp3" type="audio/mpeg">
+    你的浏览器不支持 audio 元素。
+  </audio>
+</p>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"/assets/croatian-rhapsody.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mpeg"</span>&gt;</span></div><div class="line">  你的浏览器不支持 audio 元素。</div><div class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<p>
+  <video controls>
+    <source src="/assets/big-buck-bunny.mp4" type="video/mp4">
+    你的浏览器不支持 video 元素。
+  </video>
+</p>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">controls</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"/assets/big-buck-bunny.mp4"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span>&gt;</span></div><div class="line">  你的浏览器不支持 video 元素。</div><div class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<p>
+  <iframe width="100%" height="240" src="http://player.youku.com/embed/XNDM5ODk1NzUy" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"240"</span> <span class="attr">src</span>=<span class="string">"http://player.youku.com/embed/XNDM5ODk1NzUy"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="表格内容"><a href="#表格内容" class="headerlink" title="表格内容"></a>表格内容</h2>
+<div class="scroll-view">
+  <table class="table">
+    <thead>
+      <tr><th>名称</th><th>作者</th><th>开发语言</th><th>大小</th><th>特性</th><th>GitHub</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="http://getmobicss.com/" target="_blank" rel="external">Mobi.css</a></td>
+        <td><a href="https://github.com/xcatliu" target="_blank" rel="external">xcatliu</a></td>
+        <td>Sass</td>
+        <td>3.6kb</td>
+        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/xcatliu/mobi.css" target="_blank" rel="external">Mobi.css GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://getskeleton.com/" target="_blank" rel="external">Skeleton</a></td>
+        <td><a href="https://github.com/dhg" target="_blank" rel="external">Dave Gamache</a></td>
+        <td>Css</td>
+        <td>3.2kb</td>
+        <td><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/dhg/Skeleton/" target="_blank" rel="external">Skeleton GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://purecss.io/" target="_blank" rel="external">Pure.css</a></td>
+        <td><a href="https://github.com/yahoo" target="_blank" rel="external">Yahoo Inc.</a></td>
+        <td>Css</td>
+        <td>4.6kb</td>
+        <td><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/yahoo/pure/" target="_blank" rel="external">Pure.css GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://v4-alpha.getbootstrap.com/" target="_blank" rel="external">Bootstrap v4</a></td>
+        <td><a href="https://github.com/twbs" target="_blank" rel="external">Twitter</a></td>
+        <td>Sass, JavaScript</td>
+        <td>20.1kb</td>
+        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/twbs/bootstrap/tree/v4-dev" target="_blank" rel="external">Bootstrap v4 GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://goratchet.com/" target="_blank" rel="external"><s>Ratchet</s></a></td>
+        <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792" target="_blank" rel="external"><s>这个项目即将死亡。</s></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"scroll-view"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">table</span> <span class="attr">class</span>=<span class="string">"table"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">thead</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>名称<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>作者<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>开发语言<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>大小<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>特性<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>GitHub<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://getmobicss.com/"</span>&gt;</span>Mobi.css<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://github.com/xcatliu"</span>&gt;</span>xcatliu<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>Sass<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>3.6kb<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-star"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-star"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-star"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://github.com/xcatliu/mobi.css"</span>&gt;</span>Mobi.css GitHub<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://getskeleton.com/"</span>&gt;</span>Skeleton<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://github.com/dhg"</span>&gt;</span>Dave Gamache<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>Css<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>3.2kb<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-star"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://github.com/dhg/Skeleton/"</span>&gt;</span>Skeleton GitHub<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://purecss.io/"</span>&gt;</span>Pure.css<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://github.com/yahoo"</span>&gt;</span>Yahoo Inc.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>Css<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>4.6kb<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-star"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-star"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://github.com/yahoo/pure/"</span>&gt;</span>Pure.css GitHub<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://v4-alpha.getbootstrap.com/"</span>&gt;</span>Bootstrap v4<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://github.com/twbs"</span>&gt;</span>Twitter<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>Sass, JavaScript<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>20.1kb<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-star"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-star"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-star"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-star"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-star"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://github.com/twbs/bootstrap/tree/v4-dev"</span>&gt;</span>Bootstrap v4 GitHub<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://goratchet.com/"</span>&gt;</span><span class="tag">&lt;<span class="name">s</span>&gt;</span>Ratchet<span class="tag">&lt;/<span class="name">s</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span>=<span class="string">"5"</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://github.com/twbs/ratchet/issues/792"</span>&gt;</span><span class="tag">&lt;<span class="name">s</span>&gt;</span>这个项目即将死亡。<span class="tag">&lt;/<span class="name">s</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">table</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<div class="scroll-view">
+  <table class="table">
+    <caption>表格标题</caption>
+    <colgroup>
+      <unit style="background-color:rgba(255, 0, 0, 0.1);">
+      <unit span="2" style="background-color:rgba(255, 255, 0, 0.1);">
+    </unit></unit></colgroup>
+    <thead>
+      <tr>
+        <th>头部 1</th>
+        <th>头部 2</th>
+        <th>头部 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.1</td>
+        <td>1.2</td>
+        <td>1.3</td>
+      </tr>
+      <tr>
+        <td>2.1</td>
+        <td>2.2</td>
+        <td>2.3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>尾部 1</td>
+        <td>尾部 2</td>
+        <td>尾部 3</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"scroll-view"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">table</span> <span class="attr">class</span>=<span class="string">"table"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">caption</span>&gt;</span>表格标题<span class="tag">&lt;/<span class="name">caption</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">colgroup</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">unit</span> <span class="attr">style</span>=<span class="string">"background-color:rgba(255, 0, 0, 0.1);"</span>/&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">unit</span> <span class="attr">span</span>=<span class="string">"2"</span> <span class="attr">style</span>=<span class="string">"background-color:rgba(255, 255, 0, 0.1);"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">colgroup</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">thead</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">th</span>&gt;</span>头部 1<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">th</span>&gt;</span>头部 2<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">th</span>&gt;</span>头部 3<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>2.1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>2.2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>2.3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">tfoot</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>尾部 1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>尾部 2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>尾部 3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">tfoot</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">table</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2>
+<form class="form">
+
+<h3 id="文本输入框"><a href="#文本输入框" class="headerlink" title="文本输入框"></a>文本输入框</h3>
+<input type="text" placeholder="input[type=text]">
+<input type="password" placeholder="input[type=password]">
+<input type="email" placeholder="input[type=email]">
+<input type="search" placeholder="input[type=search]">
+<input type="url" placeholder="input[type=url]">
+<input type="tel" placeholder="input[type=tel]">
+<input type="number" placeholder="input[type=number]">
+<textarea placeholder="textarea"></textarea>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"input[type=text]"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">placeholder</span>=<span class="string">"input[type=password]"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"email"</span> <span class="attr">placeholder</span>=<span class="string">"input[type=email]"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"search"</span> <span class="attr">placeholder</span>=<span class="string">"input[type=search]"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"url"</span> <span class="attr">placeholder</span>=<span class="string">"input[type=url]"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"tel"</span> <span class="attr">placeholder</span>=<span class="string">"input[type=tel]"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"number"</span> <span class="attr">placeholder</span>=<span class="string">"input[type=number]"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">placeholder</span>=<span class="string">"textarea"</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="单选框和复选框"><a href="#单选框和复选框" class="headerlink" title="单选框和复选框"></a>单选框和复选框</h3>
+<label class="flex-middle"><input type="radio" name="gender">男</label>
+<label class="flex-middle"><input type="radio" name="gender">女</label>
+<label class="flex-middle"><input type="checkbox">我同意条款。</label>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"flex-middle"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"gender"</span>/&gt;</span>男<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"flex-middle"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"gender"</span>/&gt;</span>女<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"flex-middle"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span>/&gt;</span>我同意条款。<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="选择框"><a href="#选择框" class="headerlink" title="选择框"></a>选择框</h3>
+<select>
+  <option disabled selected value=""> -- 请选择 -- </option>
+  <option>中国</option>
+  <option>美国</option>
+</select>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">option</span> <span class="attr">disabled</span> <span class="attr">selected</span> <span class="attr">value</span>&gt;</span> -- 请选择 -- <span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>中国<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>美国<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<select>
+  <optgroup label="中国">
+    <option>北京</option>
+    <option>上海</option>
+  </optgroup>
+  <optgroup label="美国">
+    <option>三藩市</option>
+    <option>西雅图</option>
+    <option>纽约</option>
+  </optgroup>
+</select>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">optgroup</span> <span class="attr">label</span>=<span class="string">"中国"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>上海<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">optgroup</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">optgroup</span> <span class="attr">label</span>=<span class="string">"美国"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>三藩市<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>西雅图<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>纽约<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">optgroup</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<select multiple>
+  <optgroup label="中国">
+    <option>北京</option>
+    <option>上海</option>
+  </optgroup>
+  <optgroup label="美国">
+    <option>三藩市</option>
+    <option>西雅图</option>
+    <option>纽约</option>
+  </optgroup>
+</select>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">multiple</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">optgroup</span> <span class="attr">label</span>=<span class="string">"中国"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>上海<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">optgroup</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">optgroup</span> <span class="attr">label</span>=<span class="string">"美国"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>三藩市<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>西雅图<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>纽约<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">optgroup</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="数据列表"><a href="#数据列表" class="headerlink" title="数据列表"></a>数据列表</h3>
+<label>
+  请选择一个浏览器：
+  <input type="text" list="browsers">
+</label>
+<datalist id="browsers">
+  <option value="Chrome">
+  </option><option value="Firefox">
+  </option><option value="Internet Explorer">
+  </option><option value="Opera">
+  </option><option value="Safari">
+  </option><option value="Microsoft Edge">
+</option></datalist>
+
+<p><code>&lt;datalist&gt;</code> 在 iOS 中不支持。不要使用它。</p>
+<h3 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a>文件上传</h3>
+<input type="file">
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span>/&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h3>
+<input type="button" class="btn" value=".btn">
+<input type="button" class="btn btn-primary" value=".btn.btn-primary">
+<input type="button" class="btn btn-danger" value=".btn.btn-danger">
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"btn"</span> <span class="attr">value</span>=<span class="string">".btn"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"btn btn-primary"</span> <span class="attr">value</span>=<span class="string">".btn.btn-primary"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"btn btn-danger"</span> <span class="attr">value</span>=<span class="string">".btn.btn-danger"</span>/&gt;</span></div></pre></td></tr></table></figure>
+
+<input type="reset" class="btn" value=".btn">
+<input type="reset" class="btn btn-primary" value=".btn.btn-primary">
+<input type="reset" class="btn btn-danger" value=".btn.btn-danger">
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"reset"</span> <span class="attr">class</span>=<span class="string">"btn"</span> <span class="attr">value</span>=<span class="string">".btn"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"reset"</span> <span class="attr">class</span>=<span class="string">"btn btn-primary"</span> <span class="attr">value</span>=<span class="string">".btn.btn-primary"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"reset"</span> <span class="attr">class</span>=<span class="string">"btn btn-danger"</span> <span class="attr">value</span>=<span class="string">".btn.btn-danger"</span>/&gt;</span></div></pre></td></tr></table></figure>
+
+<input type="submit" class="btn" value=".btn">
+<input type="submit" class="btn btn-primary" value=".btn.btn-primary">
+<input type="submit" class="btn btn-danger" value=".btn.btn-danger">
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">class</span>=<span class="string">"btn"</span> <span class="attr">value</span>=<span class="string">".btn"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">class</span>=<span class="string">"btn btn-primary"</span> <span class="attr">value</span>=<span class="string">".btn.btn-primary"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">class</span>=<span class="string">"btn btn-danger"</span> <span class="attr">value</span>=<span class="string">".btn.btn-danger"</span>/&gt;</span></div></pre></td></tr></table></figure>
+
+<button type="button" class="btn">.btn</button>
+<button type="button" class="btn btn-primary">.btn.btn-primary</button>
+<button type="button" class="btn btn-danger">.btn.btn-danger</button>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"btn"</span>&gt;</span>.btn<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"btn btn-primary"</span>&gt;</span>.btn.btn-primary<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"btn btn-danger"</span>&gt;</span>.btn.btn-danger<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<button type="reset" class="btn">.btn</button>
+<button type="reset" class="btn btn-primary">.btn.btn-primary</button>
+<button type="reset" class="btn btn-danger">.btn.btn-danger</button>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"reset"</span> <span class="attr">class</span>=<span class="string">"btn"</span>&gt;</span>.btn<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"reset"</span> <span class="attr">class</span>=<span class="string">"btn btn-primary"</span>&gt;</span>.btn.btn-primary<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"reset"</span> <span class="attr">class</span>=<span class="string">"btn btn-danger"</span>&gt;</span>.btn.btn-danger<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<button type="submit" class="btn">.btn</button>
+<button type="submit" class="btn btn-primary">.btn.btn-primary</button>
+<button type="submit" class="btn btn-danger">.btn.btn-danger></button>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">class</span>=<span class="string">"btn"</span>&gt;</span>.btn<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">class</span>=<span class="string">"btn btn-primary"</span>&gt;</span>.btn.btn-primary<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">class</span>=<span class="string">"btn btn-danger"</span>&gt;</span>.btn.btn-danger&gt;<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<a href="javascript:void(0);" class="btn" target="_blank" rel="external">.btn</a>
+<a href="javascript:void(0);" class="btn btn-primary" target="_blank" rel="external">.btn.btn-primary</a>
+<a href="javascript:void(0);" class="btn btn-danger" target="_blank" rel="external">.btn.btn-danger</a>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:void(0);"</span> <span class="attr">class</span>=<span class="string">"btn"</span>&gt;</span>.btn<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:void(0);"</span> <span class="attr">class</span>=<span class="string">"btn btn-primary"</span>&gt;</span>.btn.btn-primary<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:void(0);"</span> <span class="attr">class</span>=<span class="string">"btn btn-danger"</span>&gt;</span>.btn.btn-danger<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="日期输入框"><a href="#日期输入框" class="headerlink" title="日期输入框"></a>日期输入框</h3>
+<input type="time">
+<input type="week">
+<input type="month">
+<input type="date">
+<input type="datetime-local">
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"time"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"week"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"month"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"date"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"datetime-local"</span>/&gt;</span></div></pre></td></tr></table></figure>
+<p>所有日期输入框在 iOS 中都很丑陋，并且他们的样式无法修改，使用需谨慎。不建议在你的项目中使用它们。</p>
+<p><code>[type=week]</code> 在 iOS 中不支持。不要使用它。</p>
+<h3 id="其他输入框"><a href="#其他输入框" class="headerlink" title="其他输入框"></a>其他输入框</h3>
+<input type="color">
+<input type="range" min="1" max="99" step="2">
+<input type="image" src="/assets/img/xcatliu.png" alt="xcatliu" width="64">
+<input type="hidden">
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"color"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"range"</span> <span class="attr">min</span>=<span class="string">"1"</span> <span class="attr">max</span>=<span class="string">"99"</span> <span class="attr">step</span>=<span class="string">"2"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"image"</span> <span class="attr">src</span>=<span class="string">"/assets/img/xcatliu.png"</span> <span class="attr">alt</span>=<span class="string">"xcatliu"</span> <span class="attr">width</span>=<span class="string">"64"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"hidden"</span>/&gt;</span></div></pre></td></tr></table></figure>
+<p><code>[type=color]</code> 在 iOS 中不支持。不要使用它。</p>
+
+<meter min="0" max="100" value="37">37 度</meter>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meter</span> <span class="attr">min</span>=<span class="string">"0"</span> <span class="attr">max</span>=<span class="string">"100"</span> <span class="attr">value</span>=<span class="string">"37"</span>&gt;</span>37 度<span class="tag">&lt;/<span class="name">meter</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><code>&lt;meter&gt;</code> 在 iOS 中不支持。不要使用它。</p>
+
+</form>
+<form class="form" oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+  <div class="flex-left units-gap">
+    <div class="unit flex-middle">
+      <input type="range" name="b" value="50" max="80">
+    </div>
+    <div class="unit-0 flex-middle top-gap">+</div>
+    <div class="unit flex-middle">
+      <input type="number" name="a" value="10">
+    </div>
+    <div class="unit-0 flex-middle top-gap">=</div>
+    <div class="unit-0 flex-middle top-gap" style="padding:0 15px 0 7px;"><output name="result">60</output></div>
+  </div>
+</form>
+<form class="form">
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">class</span>=<span class="string">"form"</span> <span class="attr">oninput</span>=<span class="string">"result.value=parseInt(a.value)+parseInt(b.value)"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-left top-gap"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit flex-middle"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"top-gap-0"</span> <span class="attr">type</span>=<span class="string">"range"</span> <span class="attr">name</span>=<span class="string">"b"</span> <span class="attr">value</span>=<span class="string">"50"</span> <span class="attr">max</span>=<span class="string">"80"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-middle"</span>&gt;</span>+<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"unit flex-middle"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"top-gap-0"</span> <span class="attr">type</span>=<span class="string">"number"</span> <span class="attr">name</span>=<span class="string">"a"</span> <span class="attr">value</span>=<span class="string">"10"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-middle"</span>&gt;</span>=<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-middle"</span> <span class="attr">style</span>=<span class="string">"padding:0 15px 0 7px;"</span>&gt;</span><span class="tag">&lt;<span class="name">output</span> <span class="attr">name</span>=<span class="string">"result"</span>&gt;</span>60<span class="tag">&lt;/<span class="name">output</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<progress class="top-gap" value="70" max="100">70 %</progress>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">progress</span> <span class="attr">class</span>=<span class="string">"top-gap"</span> <span class="attr">value</span>=<span class="string">"70"</span> <span class="attr">max</span>=<span class="string">"100"</span>&gt;</span>70 %<span class="tag">&lt;/<span class="name">progress</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="禁用和只读"><a href="#禁用和只读" class="headerlink" title="禁用和只读"></a>禁用和只读</h3>
+<input type="text" disabled placeholder="input[disabled]">
+<input type="text" readonly value="input[readonly]">
+<textarea disabled placeholder="textarea[disabled]"></textarea>
+<textarea readonly>textarea[readonly]</textarea>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">disabled</span> <span class="attr">placeholder</span>=<span class="string">"input[disabled]"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">readonly</span> <span class="attr">value</span>=<span class="string">"input[readonly]"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">disabled</span> <span class="attr">placeholder</span>=<span class="string">"textarea[disabled]"</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">readonly</span>&gt;</span>textarea[readonly]<span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<label class="flex-middle"><input type="radio" name="gender" checked disabled><span disabled>男</span></label>
+<label class="flex-middle"><input type="radio" name="gender" disabled><span disabled>女</span></label>
+<label class="flex-middle"><input type="checkbox" disabled><span disabled>我同意条款。</span></label>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"flex-middle"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"gender"</span> <span class="attr">checked</span> <span class="attr">disabled</span>/&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">disabled</span>&gt;</span>男<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"flex-middle"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"gender"</span> <span class="attr">disabled</span>/&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">disabled</span>&gt;</span>女<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"flex-middle"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">disabled</span>/&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">disabled</span>&gt;</span>我同意条款。<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>单选框和复选框不能设置为只读。</p>
+
+<select disabled>
+  <option disabled selected value=""> -- 请选择 -- </option>
+  <option>中国</option>
+  <option>美国</option>
+</select>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">disabled</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">option</span> <span class="attr">disabled</span> <span class="attr">selected</span> <span class="attr">value</span>&gt;</span> -- 请选择 -- <span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>中国<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>美国<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>选择框不能设置为只读。</p>
+
+<input type="file" disabled>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">disabled</span>/&gt;</span></div></pre></td></tr></table></figure>
+<p>文件上传控件不能设置为只读。</p>
+
+<input type="button" class="btn" value=".btn" disabled>
+<input type="button" class="btn btn-primary" value=".btn.btn-primary" disabled>
+<input type="button" class="btn btn-danger" value=".btn.btn-danger" disabled>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"btn"</span> <span class="attr">value</span>=<span class="string">".btn"</span> <span class="attr">disabled</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"btn btn-primary"</span> <span class="attr">value</span>=<span class="string">".btn.btn-primary"</span> <span class="attr">disabled</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"btn btn-danger"</span> <span class="attr">value</span>=<span class="string">".btn.btn-danger"</span> <span class="attr">disabled</span>/&gt;</span></div></pre></td></tr></table></figure>
+
+<a href="javascript:void(0);" class="btn" disabled target="_blank" rel="external">.btn</a>
+<a href="javascript:void(0);" class="btn btn-primary" disabled target="_blank" rel="external">.btn.btn-primary</a>
+<a href="javascript:void(0);" class="btn btn-danger" disabled target="_blank" rel="external">.btn.btn-danger</a>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:void(0);"</span> <span class="attr">class</span>=<span class="string">"btn"</span> <span class="attr">disabled</span>&gt;</span>.btn<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:void(0);"</span> <span class="attr">class</span>=<span class="string">"btn btn-primary"</span> <span class="attr">disabled</span>&gt;</span>.btn.btn-primary<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:void(0);"</span> <span class="attr">class</span>=<span class="string">"btn btn-danger"</span> <span class="attr">disabled</span>&gt;</span>.btn.btn-danger<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>按钮不能设置为只读。</p>
+
+<input type="datetime-local" disabled>
+<input type="datetime-local" readonly value="2016-12-31T12:59">
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"datetime-local"</span> <span class="attr">disabled</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"datetime-local"</span> <span class="attr">readonly</span> <span class="attr">value</span>=<span class="string">"2016-12-31T12:59"</span>/&gt;</span></div></pre></td></tr></table></figure>
+
+<input type="color" disabled>
+<input type="range" min="1" max="99" step="2" disabled>
+<input type="image" src="/assets/img/xcatliu.png" alt="xcatliu" width="64" disabled>
+<input type="hidden" disabled>
+<input type="color" value="#ff0000" readonly>
+<input type="range" min="1" max="99" step="2" value="15" readonly>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"color"</span> <span class="attr">disabled</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"range"</span> <span class="attr">min</span>=<span class="string">"1"</span> <span class="attr">max</span>=<span class="string">"99"</span> <span class="attr">step</span>=<span class="string">"2"</span> <span class="attr">disabled</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"image"</span> <span class="attr">src</span>=<span class="string">"/assets/img/xcatliu.png"</span> <span class="attr">alt</span>=<span class="string">"xcatliu"</span> <span class="attr">width</span>=<span class="string">"64"</span> <span class="attr">disabled</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"hidden"</span> <span class="attr">disabled</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"range"</span> <span class="attr">min</span>=<span class="string">"1"</span> <span class="attr">max</span>=<span class="string">"99"</span> <span class="attr">step</span>=<span class="string">"2"</span> <span class="attr">value</span>=<span class="string">"15"</span> <span class="attr">readonly</span>/&gt;</span></div></pre></td></tr></table></figure>
+<p><code>[type=image]</code>, <code>[type=color]</code> 和 <code>[type=hidden]</code> 不能设置为只读。</p>
+<h3 id="表单中的字段集"><a href="#表单中的字段集" class="headerlink" title="表单中的字段集"></a>表单中的字段集</h3>
+<fieldset>
+  <legend>基本信息</legend>
+  <input type="text" placeholder="姓名">
+  <input type="number" placeholder="年龄">
+</fieldset>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">fieldset</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">legend</span>&gt;</span>基本信息<span class="tag">&lt;/<span class="name">legend</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"姓名"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"number"</span> <span class="attr">placeholder</span>=<span class="string">"年龄"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></div></pre></td></tr></table></figure>
+
+</form>
+
+<h2 id="下一步"><a href="#下一步" class="headerlink" title="下一步"></a>下一步</h2><ul>
+<li><a href="../extensions">扩展</a>：插件、主题和其他</li>
+<li><a href="https://github.com/xcatliu/mobi.css" target="_blank" rel="external">GitHub</a>：反馈问题，参与贡献</li>
+</ul>
+
+        </article>
+        <hr/>
+        <address>
+          由 <a href="https://github.com/xcatliu/">@xcatliu</a> 匠<i class="fa fa-heart" style="color:red;"></i>打造。
+        </address>
+      </div>
+      <aside class="hide-on-mobile" style="padding:0 28px; width:256px;">
+        <p class="text-center">扫描可在手机中查看</p>
+        <p><img alt="qrcode" src="/assets/img/qrcode.png"/></p>
+      </aside>
+    </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45256157-10', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
